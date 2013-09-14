@@ -1,9 +1,21 @@
+/**
+ *  style1.css
+ *
+ *    CSS for index.html
+ *
+ *  Cindy Liu
+ *  CSCI E-15 fall 2013
+ *  Project 1
+ */
+
+/* sets fixed tiled background image and centers text */
 body {
     background: url("green_tiles.jpg");
     background-attachment: fixed;
     text-align: center;
 }
 
+/* makes rounded box around body of text, sets font etc. */
 .text {
     font: 100%/125% "Georgia", serif;
     color: #333;
@@ -19,6 +31,7 @@ body {
     margin-bottom: 5em;
 }
 
+/* heading settings */
 h2 {
     padding: 1em;
     margin: 0;
@@ -29,6 +42,7 @@ h3 {
     margin-top: 1em;
 }
 
+/* section-specific formatting */
 p.note {
     font-style: italic;
     margin-top: 3em;
