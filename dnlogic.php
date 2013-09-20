@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set("America/New_York");
+
 $hour = date('G');
 
 if($hour >= 6 AND $hour <= 20) {
