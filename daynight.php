@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Day or Night?</title>
-		<link rel="stylesheet" href="dn_style.css">
 		<?php require_once('dnlogic.php'); ?>
 	</head>
 
