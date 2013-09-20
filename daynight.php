@@ -13,6 +13,7 @@
 			        background-color: <?=$bg_color?>;
 			        color: <?=$text_color?>;
 			        text-align: center;
+			        font: bold 200% "Futura" sans-serif;
 			}
 			div.container {
 			        height: 3em;
