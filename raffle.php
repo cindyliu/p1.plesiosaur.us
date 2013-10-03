@@ -12,7 +12,7 @@
 	<form method='POST' action='raffle.php'>
 		Enter 5 contestants' names or email addresses.<br>
 		If you enter an email address and it wins, an email will be sent to that address informing the owner that s/he has won.<br>
-		<?php if(count($_POST) != 0): ?>
+		<?php if(count($_POST) == 0): ?>
 			<input type='text' name='contestant1'><br>
 			<input type='text' name='contestant2'><br>
 			<input type='text' name='contestant3'><br>
@@ -27,7 +27,7 @@
 		<?php endif; ?>
 	</form><br>
 
-	<?php if(count($_POST) != 0): ?>
+	<?php if(count($_POST) > 0): ?>
 		<p>The winning number is <?=$target?>!</p>
 	<?php endif; ?>
 
