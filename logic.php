@@ -63,13 +63,13 @@ for($i = 0; $i < 10; $i++) {
 	$size = "";
 }
 
+
+$contestants1["Sam"] = "loser";
+$contestants1["Eliot"] = "loser";
+$contestants1["Liz"] = "winner";
+$contestants1["Max"] = "loser";
+
 /*
-$contestants["Sam"] = "loser";
-$contestants["Eliot"] = "loser";
-$contestants["Liz"] = "winner";
-$contestants["Max"] = "loser";
-
-
 $arr_size = count($contestants);
 $arr_print = "";
 $keys = array_keys($contestants);
@@ -85,7 +85,6 @@ $contestants = Array(
 	'Dwayne' => rand(1,10)
 );
 */
-
 
 $target = rand(1,10);
 $subject = "YOU'VE WON!!";

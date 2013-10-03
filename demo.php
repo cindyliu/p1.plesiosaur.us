@@ -30,21 +30,21 @@
 
 		<?=$boxes?>
 
-		Liz is a <?=$contestants["Liz"]?>
+		Liz is a <?=$contestants1["Liz"]?>
 
 		<h1>Contestants</h1>
 
 		<?php
-		foreach($contestants as $key => $value) {
+		foreach($contestants1 as $key => $value) {
 			echo $key." is a ".$value."!<br>";
 		}
 		?>
 
 		<pre>
-			<?php print_r($contestants); ?>
+			<?php print_r($contestants1); ?>
 		</pre>
 
-		<?php print_r($contestants); ?>
+		<?php print_r($contestants1); ?>
 
 		<pre>
 			<?=$arr_print?>
@@ -95,7 +95,7 @@
 		<?=$v?> is a 
 		<?php if($contestants[$v] == $target): ?>
 			<b>Winner!!</b>
-			<?php mail($v,$subject,$message); ?>
+<!--			<?php mail($v,$subject,$message); ?> -->
 		<?php else: ?>
 			Loser :(
 		<?php endif; ?>
