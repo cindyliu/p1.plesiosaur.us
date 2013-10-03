@@ -45,7 +45,7 @@
 		<?=$v?> is a 
 		<?php if($contestants[$v] == $target): ?>
 			<b>Winner!!</b>
-			<?php mail($v,$subject,$message); ?>
+<!--			<?php mail($v,$subject,$message); ?> -->
 		<?php else: ?>
 			Loser :(
 		<?php endif; ?>
