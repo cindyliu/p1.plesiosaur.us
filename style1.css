@@ -40,7 +40,7 @@ h1 {
 }
 
 h3 {
-    color: #063;
+    color: #243;
     margin-top: 1em;
 }
 
@@ -55,8 +55,9 @@ img {
 
 /* section-specific formatting */
 #name {
-    color: #043;
+    color: #243;
     background: url("grey_scrolls.jpg");
+    background-color: #bdc;
     width: 90%;
     border: .2em solid #888;    
     border-radius: 1.5em;
@@ -79,7 +80,7 @@ img {
     border-radius: .5em .5em 0 0;
     padding: .25em 0 .25em 0;
     font: 100% "Gill Sans" sans-serif;
-    color: #531;
+    color: #243;
     visibility: hidden;
     opacity: 0;
 }
