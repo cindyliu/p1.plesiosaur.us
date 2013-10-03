@@ -51,7 +51,7 @@
 		<?php endif; ?>
 		<br>
 	<?php endforeach; ?>
-
+	<br>
 
 	        The square of 4 is <?=$square;?><br>
 	        My favorite color is <?=$favorite_color;?><br>
