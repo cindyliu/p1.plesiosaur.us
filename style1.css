@@ -47,7 +47,7 @@ h3 {
 img {
     position: relative;
     border: .2em solid #888;
-    border-radius: 1em;
+    border-radius: 2em;
     margin: 2em auto 1em auto;
     max-width: 40%;
 }
@@ -77,10 +77,10 @@ img {
     position: absolute;
     top: .33em; left: 40%; right: 40%;
     background: #888;
-    border-radius: .5em .5em 0 0;
+    border-radius: .75em .75em 0 0;
     padding: .25em 0 .25em 0;
     font: 100% "Gill Sans" sans-serif;
-    color: #243;
+    color: #bdc;
     visibility: hidden;
     opacity: 0;
 }
