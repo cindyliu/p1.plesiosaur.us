@@ -55,7 +55,7 @@ img {
 
 /* section-specific formatting */
 #name {
-    color: #043;
+    color: #115;
     background: url("grey_scrolls.jpg");
     width: 90%;
     border: .2em solid #888;    
