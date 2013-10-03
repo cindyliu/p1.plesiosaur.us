@@ -4,14 +4,18 @@
 
 	<head>
 		<?php require_once('logic.php'); ?>
+		<link rel="stylesheet" href="style1.css">
 		<title>RAFFLE</title>
 	</head>
 
 	<body>
+	<div class="text">
+
+	<h1><br>Raffle!</h1>
 
 	<form method='POST' action='raffle.php'>
-		Enter 5 contestants' names or email addresses.<br>
-		If you enter an email address and it wins, an email will be sent to that address informing the owner that s/he has won.<br>
+		<p>Enter 5 contestants' names or email addresses.</p
+		<p>If you enter an email address and it wins, an email will be sent to that address informing the owner that s/he has won.</p>
 		<?php if(count($_POST) == 0): ?>
 			<input type='text' name='contestant1'><br>
 			<input type='text' name='contestant2'><br>
@@ -43,6 +47,7 @@
 		<br>
 	<?php endforeach; ?>
 
+	</div>
 	</body>
 
 </html>
