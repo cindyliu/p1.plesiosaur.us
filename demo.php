@@ -20,6 +20,39 @@
 
 	<body>
 
+	<form method='POST' action='demo.php'>
+		Enter 5 contestants<br>
+		<?php if(count($_POST) != 0): ?>
+			<?php foreach($_POST as $k => $v): ?>
+				<input type='text' name='<?=$k?>' value='<?=$v?>'><br>
+			<?php endforeach; ?>
+		<?php else: ?>
+			<input type='text' name='contestant1'><br>
+			<input type='text' name='contestant2'><br>
+			<input type='text' name='contestant3'><br>
+			<input type='text' name='contestant4'><br>
+			<input type='text' name='contestant5'><br>
+		<?php endif; ?>
+		<input type='submit' value='Pick a winner!'><br>
+	</form><br>
+
+	<?php if(count($_POST) != 0): ?>
+		<p>The winning number is <?=$target?>!</p>
+	<?php endif; ?>
+
+	<?php foreach($_POST as $k => $v): ?>
+		<?php $contestants[$v] = rand(1,10); ?>
+		<?=$v?> is a 
+		<?php if($contestants[$v] == $target): ?>
+			<b>Winner!!</b>
+			<?php mail($v,$subject,$message); ?>
+		<?php else: ?>
+			Loser :(
+		<?php endif; ?>
+		<br>
+	<?php endforeach; ?>
+
+
 	        The square of 4 is <?=$square;?><br>
 	        My favorite color is <?=$favorite_color;?><br>
 		I have this much money: <?=$calculated_total;?><br>
@@ -70,38 +103,6 @@
 	<?php endif; ?>
 
 -->
-	<form method='POST' action='demo.php'>
-		Enter 5 contestants<br>
-		<?php if(count($_POST) != 0): ?>
-			<?php foreach($_POST as $k => $v): ?>
-				<input type='text' name='<?=$k?>' value='<?=$v?>'><br>
-			<?php endforeach; ?>
-		<?php else: ?>
-			<input type='text' name='contestant1'><br>
-			<input type='text' name='contestant2'><br>
-			<input type='text' name='contestant3'><br>
-			<input type='text' name='contestant4'><br>
-			<input type='text' name='contestant5'><br>
-		<?php endif; ?>
-		<input type='submit' value='Pick a winner!'><br>
-	</form><br>
-
-	<?php if(count($_POST) != 0): ?>
-		<p>The winning number is <?=$target?>!</p>
-	<?php endif; ?>
-
-	<?php foreach($_POST as $k => $v): ?>
-		<?php $contestants[$v] = rand(1,10); ?>
-		<?=$v?> is a 
-		<?php if($contestants[$v] == $target): ?>
-			<b>Winner!!</b>
-<!--			<?php mail($v,$subject,$message); ?> -->
-		<?php else: ?>
-			Loser :(
-		<?php endif; ?>
-		<br>
-	<?php endforeach; ?>
-
 	</body>
 
 </html>
