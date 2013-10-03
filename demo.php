@@ -20,7 +20,6 @@
 
 	<body>
 
-<!--
 	        The square of 4 is <?=$square;?><br>
 	        My favorite color is <?=$favorite_color;?><br>
 		I have this much money: <?=$calculated_total;?><br>
@@ -51,6 +50,7 @@
 			<?=$arr_print?>
 		</pre>
 
+<!--
 	<p>Refresh to play again</p>
 
 	<p>The winning number is <?=$target?>!</p>
@@ -95,7 +95,7 @@
 		<?=$v?> is a 
 		<?php if($contestants[$v] == $target): ?>
 			<b>Winner!!</b>
-<!--			<?php mail($v,$subject,$message); ?> -->
+			<?php mail($v,$subject,$message); ?>
 		<?php else: ?>
 			Loser :(
 		<?php endif; ?>
